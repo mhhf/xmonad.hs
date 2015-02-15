@@ -18,6 +18,8 @@ xmonad $ defaultConfig
 	`additionalKeysP`
 	[
 	("M-w", spawn "firefox"),
-	("M-<F4>", kill)
+	("M-<F4>", kill),
+	("<Print>", spawn "scrot /$HOME/work/screenshot/%Y%m%d-%H%M%S.png"),
+	("C-<Print>", spawn "scrot /$HOME/work/screenshot/%Y%m%d-%H%M%S.png -u")
 	]
 

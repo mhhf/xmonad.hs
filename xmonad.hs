@@ -12,7 +12,7 @@ xmonad $ defaultConfig
 	focusedBorderColor = "#0000FF",
 	normalBorderColor = "#808080",
 	modMask = mod1Mask,
-	layoutHook = Tall 1 (1/100) (1/2) ||| smartBorders Full
+	layoutHook = smartBorders Full ||| Tall 1 (1/100) (1/2)
 	}
 
 	`additionalKeysP`

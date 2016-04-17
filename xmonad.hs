@@ -8,6 +8,7 @@ import XMonad.Actions.KeyRemap
 import XMonad.Prompt
 import XMonad.Prompt.Shell
 import XMonad.Prompt.XMonad
+import XMonad.Hooks.ICCCMFocus as ICCCMFocus
 
 colorBlue = "#857da9"
 colorGreen = "#88b986"
@@ -51,7 +52,8 @@ xmonad $ defaultConfig
 	focusedBorderColor = "#0000FF",
 	normalBorderColor = "#808080",
 	modMask = mod1Mask,
-	layoutHook = smartBorders Full ||| Tall 1 (1/100) (1/2)
+	layoutHook = smartBorders Full ||| Tall 1 (1/100) (1/2),
+	logHook = ICCCMFocus.takeTopFocus
 	--startupHook = tm
 	--logHook = dynamicLogWithPP $ wsPP { ppOutput = hPutStrLn bar}
 	}

@@ -60,7 +60,7 @@ xmonad $ defaultConfig
 
 	`additionalKeysP`
 	[
-    ("M-q", spawn "xmonad --recompile; xmonad --restart"),
+	("M-q", spawn "xmonad --recompile; xmonad --restart"),
 	("M-<F4>", kill),
 	("<Print>", spawn "scrot /$HOME/work/screenshot/%Y%m%d-%H%M%S.png"),
 	("C-<Print>", spawn "scrot /$HOME/work/screenshot/%Y%m%d-%H%M%S.png -u"),

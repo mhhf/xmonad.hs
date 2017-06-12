@@ -53,6 +53,7 @@ xmonad $ defaultConfig
 	normalBorderColor = "#808080",
 	modMask = mod1Mask,
 	workspaces = map show [1..9],
+	startupHook = spawn "urxvtc",
 	layoutHook = noBorders Full ||| Tall 1 (1/100) (1/2),
 	logHook = ICCCMFocus.takeTopFocus
 	--startupHook = tm

@@ -52,7 +52,7 @@ xmonad $ defaultConfig
 	focusedBorderColor = "#0000FF",
 	normalBorderColor = "#808080",
 	modMask = mod1Mask,
-	layoutHook = smartBorders Full ||| Tall 1 (1/100) (1/2),
+	layoutHook = noBorders Full ||| Tall 1 (1/100) (1/2),
 	logHook = ICCCMFocus.takeTopFocus
 	--startupHook = tm
 	--logHook = dynamicLogWithPP $ wsPP { ppOutput = hPutStrLn bar}
